@@ -11,7 +11,19 @@
 		9891061221D65AE9007829AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9891061121D65AE9007829AC /* Assets.xcassets */; };
 		9891061521D65AE9007829AC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9891061321D65AE9007829AC /* MainMenu.xib */; };
 		9891061821D65AE9007829AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891061721D65AE9007829AC /* main.m */; };
+		9891062921D66549007829AC /* ShadowstarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9891062721D66541007829AC /* ShadowstarKit.framework */; };
+		9891062C21D6672B007829AC /* MacSystemInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891062B21D6672B007829AC /* MacSystemInformation.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9891062621D66541007829AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9891062221D66541007829AC /* ShadowstarKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98804684205813D100E9E768;
+			remoteInfo = ShadowstarKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9891060B21D65AE7007829AC /* System Snapshots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "System Snapshots.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +34,9 @@
 		9891061621D65AE9007829AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9891061721D65AE9007829AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9891061F21D65C25007829AC /* System Snapshots.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "System Snapshots.entitlements"; sourceTree = "<group>"; };
+		9891062221D66541007829AC /* ShadowstarKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShadowstarKit.xcodeproj; path = ../ShadowstarKit/ShadowstarKit/ShadowstarKit.xcodeproj; sourceTree = "<group>"; };
+		9891062A21D6672B007829AC /* MacSystemInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacSystemInformation.h; sourceTree = "<group>"; };
+		9891062B21D6672B007829AC /* MacSystemInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacSystemInformation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9891062921D66549007829AC /* ShadowstarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +54,10 @@
 		9891060221D65AE6007829AC = {
 			isa = PBXGroup;
 			children = (
+				9891062221D66541007829AC /* ShadowstarKit.xcodeproj */,
 				9891060D21D65AE7007829AC /* System Snapshots */,
 				9891060C21D65AE7007829AC /* Products */,
+				9891062821D66549007829AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,8 @@
 			children = (
 				9891060E21D65AE7007829AC /* AppDelegate.h */,
 				9891060F21D65AE7007829AC /* AppDelegate.m */,
+				9891062A21D6672B007829AC /* MacSystemInformation.h */,
+				9891062B21D6672B007829AC /* MacSystemInformation.m */,
 				9891062021D65C84007829AC /* SupportFiles */,
 			);
 			path = "System Snapshots";
@@ -71,6 +91,21 @@
 				9891061721D65AE9007829AC /* main.m */,
 			);
 			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		9891062321D66541007829AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9891062721D66541007829AC /* ShadowstarKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9891062821D66549007829AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,12 +159,28 @@
 			mainGroup = 9891060221D65AE6007829AC;
 			productRefGroup = 9891060C21D65AE7007829AC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9891062321D66541007829AC /* Products */;
+					ProjectRef = 9891062221D66541007829AC /* ShadowstarKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9891060A21D65AE7007829AC /* System Snapshots */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9891062721D66541007829AC /* ShadowstarKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ShadowstarKit.framework;
+			remoteRef = 9891062621D66541007829AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9891060921D65AE7007829AC /* Resources */ = {
@@ -148,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9891062C21D6672B007829AC /* MacSystemInformation.m in Sources */,
 				9891061821D65AE9007829AC /* main.m in Sources */,
 				9891061021D65AE7007829AC /* AppDelegate.m in Sources */,
 			);
