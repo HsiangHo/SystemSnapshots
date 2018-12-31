@@ -341,7 +341,7 @@
 				DEVELOPMENT_TEAM = 9P895LY647;
 				INFOPLIST_FILE = "System Snapshots/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.SystemSnapshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,7 +359,7 @@
 				DEVELOPMENT_TEAM = 9P895LY647;
 				INFOPLIST_FILE = "System Snapshots/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.SystemSnapshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
