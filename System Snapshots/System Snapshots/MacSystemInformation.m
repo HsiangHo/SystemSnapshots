@@ -7,6 +7,8 @@
 //
 
 #import "MacSystemInformation.h"
+#import <IOKit/IOKitLib.h>
+#import <sys/sysctl.h>
 
 @implementation MacSystemInformation
 
